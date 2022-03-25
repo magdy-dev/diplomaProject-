@@ -9,7 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.magdy</groupId>
+<<<<<<< HEAD
     <artifactId>fleets</artifactId>
+=======
+    <artifactId>fleet</artifactId>
+>>>>>>> origin/main
     <version>0.0.1-SNAPSHOT</version>
     <name>fleet</name>
     <description>Fleet Management Sytem v.2</description>
