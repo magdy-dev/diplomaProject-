@@ -39,7 +39,7 @@
                                         <select id="ddlVehicleAdd" name="vehicleid" class="form-control" readonly>
                                             <option th:value="${null}">-SELECT-</option>
                                             <option th:each="vehicle : ${vehicles}"
-                                                    th:selected="${vehicle.id}==${hire.vehicleid}?True:False"
+                                                    th:selected="${vehicle.id}==${hire.vehicleid}?True:False "
                                                     th:value="${vehicle.id}"
                                                     th:text="${vehicle.name}">
                                             </option>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="_layout">
@@ -42,7 +42,7 @@
                             <th><i class="icon_mobile"></i> Continent</th>
                             <th><i class="icon_cogs"></i> Action</th>
                         </tr>
-                        <tr th:each="country:${countries}">
+                        <tr th:each="country:${invoices}">
                             <td><i class="fa fa-table"></i></td>
                             <td th:text="${country.description}"></td>
                             <td th:text="${country.capital}"></td>

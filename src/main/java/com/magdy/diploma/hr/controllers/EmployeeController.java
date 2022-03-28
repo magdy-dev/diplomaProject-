@@ -75,7 +75,7 @@ public class EmployeeController {
 
 	@RequestMapping(value="/employees/uploadPhoto", method=RequestMethod.POST, consumes=MediaType.MULTIPART_FORM_DATA_VALUE)
 	public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
-		File newFile = new File("D:\\SOLUTIONS\\fleetms\\uploads" + file.getOriginalFilename());
+		File newFile = new File("D:\\SOLUTIONS\\fleets\\uploads" + file.getOriginalFilename());
 		newFile.createNewFile();
 		FileOutputStream fout = new FileOutputStream(newFile);
 		fout.write(file.getBytes());
@@ -86,7 +86,7 @@ public class EmployeeController {
 	@PostMapping("/employees/uploadPhoto2")
 	public String uploadFile2(@RequestParam("file") MultipartFile file, Principal principal) 
 			throws IllegalStateException, IOException {
-			String baseDirectory = "D:\\SOLUTIONS\\fleetms\\src\\main\\resources\\static\\img\\photos\\" ;
+			String baseDirectory = "D:\\SOLUTIONS\\fleets\\src\\main\\resources\\static\\img\\photos\\" ;
 			file.transferTo(new File(baseDirectory + principal.getName() + ".jpg"));
 			return "redirect:/employees";
 	}

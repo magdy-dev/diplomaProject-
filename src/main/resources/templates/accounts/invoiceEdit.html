@@ -52,8 +52,7 @@
                                                 <select class="form-control" name="transactionstatusid">
                                                     <option th:value="${null}">-SELECT-</option>
                                                     <option th:each="transactionStatus : ${transactionStatuses}"
-                                                            th:selected="${transactionStatus.id} == ${transaction.transactionstatusid}?True: False"
-                                                            th:value="${transactionStatus.id}"
+                                                            th:selected="${transactionStatus.id} == ${transaction.transactionstatusid}?True: False" th:value="${transactionStatus.id}"
                                                             th:text="${transactionStatus.description}">
                                                     </option>
                                                 </select>

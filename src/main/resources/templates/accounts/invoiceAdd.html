@@ -60,7 +60,7 @@
                                         <select class="form-control" id="ddlInvoiceStatusAdd" name="invoicestatusid">
                                             <option>-SELECT-</option>
                                             <option th:each="invoiceStatus : ${invoiceStatuses}"
-                                                    th:value="${invoiceStatus.id}"
+                                                    th:text="${invoiceStatus.id}"
                                                     th:text="${invoiceStatus.description}">
                                             </option>
                                         </select>
